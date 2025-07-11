@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple HTML Task</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    main {
+        padding: 20px;
+    }
+    .content,.achievements {
+        background-color: rgb(233, 228, 228);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        margin-bottom: 10px;
+    }
+    .content:hover, .achievements:hover {
+        animation: move 4s infinite;
+        border: 2px solid red;
+        border-radius: 5px;
+    }
+
+@keyframes move {
+    0% { border-top : 2px solid red ;}
+    25% { border-right : 2px solid rgb(118, 37, 223) ;}
+    50% { border-bottom : 2px solid rgb(91, 196, 21) ; }
+    100% { border-left : 2px solid rgb(22, 159, 201) ; }
+}
+
+    h1, h2, h3 {
+        color: #333;
+    }
+    p {
+        line-height: 1.6;
+        color: #555;
+    }
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+    }
+    li {
+        margin-bottom: 10px;
+    }
+    .img-src {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease-in-out;
+      margin-bottom: 20px;
+}
+    .img-src:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+</style>
+<body>
+    <header>
+        <h1>Tribute to A.P.J Abdul Kalam</h1>
+    </header>
+    <main>
+        <section class="content">            
+            <img class="img-src" src="/images/A.P.J.jpg" alt="A.P.J Abdul Kalam" style="width:300px;height:auto;">
+            <h2>About A.P.J Abdul Kalam</h2>
+            <p>A.P.J Abdul Kalam, known as the "<strong> A.P.J. Abdul Kalam</strong>", the "<i> Man of India,</i>" was born on <em>October 15, 1931, in Rameswaram,</em> Tamil Nadu. He served as the 11th President of India and was a renowned scientist, known for his work in 
+aerospace engineering and his pivotal role in India's civilian space program and military missile development.</p>
+            <p>Before his presidency, he worked with ISRO (Indian Space Research Organisation) and DRDO (Defence Research and Development Organisation), where he was instrumental in the development of several key projects, including the SLV-3, India's first satellite launch vehicle.</p>
+        </section>
+        <section class="achievements">
+            <h3>Achievements</h3>
+            <ul>
+                <li>Developed India’s first satellite launch vehicle (SLV-III)</li>
+                <li>Led India's successful nuclear tests in 1998</li>
+                <li>Wrote books like "Wings of Fire" and "India 2020"</li>
+                <li>Received the Bharat Ratna, India's highest civilian award</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Welcome to My Simple HTML Page</p>
+    </footer>
+</body>
+</html>
